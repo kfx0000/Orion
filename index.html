@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ORION-128</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="js/GetBinaryFile.js"></script>
-    <script src="js/Z80.js"></script>
-    <script src="js/MemIO.js"></script>
-    <script src="js/Keyb.js"></script>
-    <script src="js/Screen.js"></script>
-    <script src="js/orion.js"></script>
+    <script src="js/GetBinaryFile.js" defer></script>
+    <script src="js/Z80.js" defer></script>
+    <script src="js/MemIO.js" defer></script>
+    <script src="js/Keyb.js" defer></script>
+    <script src="js/Screen.js" defer></script>
+    <script src="js/orion.js" defer></script>
 </head>
 
 <body onload="startup()">
-    <div id="header">Орион-128</div>
+    <div class="title">Орион-128</div>
     <div class="cnt">
-        <div id="mainframe">
-            <canvas id="orion"></canvas>
+        <div class="mainframe" id="mainframe">
+            <canvas class="orion" id="orion"></canvas>
         </div>
-        <div id="info" style="display: none">
+        <!-- <div id="info" style="display: none"> -->
         </div>
-        <div>
+        <div class="buttons">
             <button id="res" onclick="orion.reset(0xf800)">Reset</button>
             <button id="deb" onclick="orion.debugging()">Running...</button>
             <button id="step" style="display: none" onclick="orion.run()">Step</button>
