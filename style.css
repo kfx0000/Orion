@@ -1,0 +1,37 @@
+body {
+  background-color: #333;
+  color: aqua;
+}
+
+.cnt {
+  display: block;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+#header {
+  text-align: center;
+}
+
+#mainframe { 
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+}
+
+#info { 
+  padding: 2px;
+  min-width: 800px;
+  min-height: 400px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: darkblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: yellow;
+}
+
+#orion {
+  display: block;
+}

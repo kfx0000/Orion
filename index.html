@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORION-128</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="js/GetBinaryFile.js"></script>
+    <script src="js/Z80.js"></script>
+    <script src="js/MemIO.js"></script>
+    <script src="js/Keyb.js"></script>
+    <script src="js/Screen.js"></script>
+    <script src="js/orion.js"></script>
+</head>
+<body onload="startup()">
+    <div id="header">Орион-128</div>
+    <div class="cnt">
+        <div id="mainframe">
+            <canvas id="orion"></canvas>
+        </div>
+        <div id="info" style="display: none">
+        </div>
+        <div>
+            <button id="res" onclick="orion.reset(0xf800)">Reset</button>
+            <button id="deb" onclick="orion.debugging()">Running...</button>
+            <button id="step" style="display: none" onclick="orion.run()">Step</button>
+        </div>
+    </div>
+</body>
+</html>
